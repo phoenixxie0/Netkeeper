@@ -1,0 +1,314 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\DialHelper.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\DialHelper.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 238, 142
+STYLE DS_SYSMODAL | DS_SETFONT | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "星空助手V1.3 版",IDC_STATIC,46,21,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008 NOVASEED Studio",IDC_STATIC,50,115,139,8
+    LTEXT           "作者:Phoenix.xie",IDC_STATIC,47,45,65,8
+    LTEXT           "E-mail:xseven007@sina.com",IDC_STATIC,56,63,101,8
+    LTEXT           "个人主页:http://www.novaseed.net",IDC_STATIC,55,85,129,8
+END
+
+IDD_DialHelper_DIALOG DIALOGEX 0, 0, 446, 229
+STYLE DS_LOCALEDIT | DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "DialHelper"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CBO_USERNAME,64,114,150,86,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_PASSWORD,64,135,150,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "拨号(&D)",IDC_DIAL,15,159,48,15
+    PUSHBUTTON      "挂断(&H)",IDC_HANGUP,67,159,48,15
+    PUSHBUTTON      "退出",IDCANCEL,120,159,48,15
+    PUSHBUTTON      "设置(&S)<<",IDC_BUTTON_OPTION,173,159,48,15
+    CONTROL         "程序运行后自动连接",IDC_CHECK_AUTODIAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,264,18,88,10
+    CONTROL         "断线自动重拨",IDC_CHECK_REDIAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,264,35,64,10
+    EDITTEXT        IDC_EDIT_REDIAL_TIME,314,49,54,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "成功连接后最小化",IDC_CHECK_ONLINE_MINSIZE,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,264,67,80,10
+    CONTROL         "程序退出时自动断开连接",IDC_CHECK_HANGUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,264,84,104,10
+    CONTROL         "记录日志",IDC_CHECK_LOG,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,382,13,48,10
+    PUSHBUTTON      "打开日志(&L)",IDC_BUTTON_OPENLOG,371,27,68,14,BS_CENTER | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_ENTRY_NAME,299,148,60,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "编辑连接属性",IDC_BUTTON_PROV_EDIT,369,146,62,15
+    PUSHBUTTON      "账号管理(&U)",IDC_BUTTON_USERCONTROL,253,173,54,16
+    LTEXT           "重拨间隔",IDC_STATIC,274,53,33,8
+    LTEXT           "",IDC_STATUS,8,185,170,11,0,WS_EX_STATICEDGE
+    CTEXT           "用户名(&U):",IDC_STATIC,22,117,41,8,SS_CENTERIMAGE
+    CTEXT           "密码(&P):",IDC_STATIC,22,138,33,8,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,7,2,223,180
+    GROUPBOX        "设置选项",IDC_STATIC,250,3,185,120
+    CONTROL         "",IDC_SEPARATE,"Static",SS_GRAYFRAME | NOT WS_VISIBLE,239,0,1,221
+    LTEXT           "秒",IDC_STATIC,374,53,9,8
+    GROUPBOX        "连接及账号设置",IDC_STATIC,251,132,186,88
+    LTEXT           "连接名称:",IDC_STATIC,257,151,37,8
+    CONTROL         132,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,12,12,213,91
+    LTEXT           "",IDC_STATIC,178,185,8,11,0,WS_EX_STATICEDGE
+    LTEXT           "",IDC_TEXT,185,185,45,11,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "关于(&A)",IDC_BUTTON_ABOUT,359,197,58,16
+    LTEXT           "",IDC_LastError,7,198,223,23,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "自启动",btnAutoShortCut,269,197,58,16
+    CONTROL         "",dtDialTime,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,317,99,65,15
+    CONTROL         "定时拨号",chkTimeingDial,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,263,101,50,10
+    PUSHBUTTON      "保存设置(&S)",btnSaveIni,317,173,54,16,BS_MULTILINE
+    PUSHBUTTON      "重载设置(&R)",IDC_BUTTON1,381,173,54,16
+END
+
+IDD_DIALOG_USERCONTROL DIALOGEX 0, 0, 319, 116
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "账号管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "新建(&N)...",ID_BUTTON_NEW,247,19,50,16
+    PUSHBUTTON      "关闭(&C)",IDCANCEL,247,80,50,16
+    CONTROL         "",IDC_LIST_USER,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,11,13,224,92
+    PUSHBUTTON      "修改(&M)...",IDC_BUTTON_CHANGE,247,40,50,16
+    PUSHBUTTON      "删除(&D)",IDC_BUTTON_DELETE,247,60,50,16
+    GROUPBOX        "",IDC_STATIC,6,2,306,107
+END
+
+IDD_DIALOG_NEWUSER DIALOGEX 0, 0, 182, 127
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "账号信息"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_USERNAME,51,28,105,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,51,52,105,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDOK,27,92,50,14
+    PUSHBUTTON      "取消",IDCANCEL,104,92,50,14
+    LTEXT           "用户名:",IDC_STATIC,18,29,28,8
+    LTEXT           "密  码:",IDC_STATIC,18,53,24,8
+    GROUPBOX        "账号信息",IDC_STATIC,7,8,167,72
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,1,0
+ PRODUCTVERSION 1,2,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "NOVASEED Studio"
+            VALUE "FileDescription", "星空助手,星空极速拨号替代软件。"
+            VALUE "FileVersion", "1.3"
+            VALUE "InternalName", "NetKeeper.exe"
+            VALUE "LegalCopyright", "软件开源,欢迎大家一起讨论和研究"
+            VALUE "OriginalFilename", "NetKeeper.exe"
+            VALUE "ProductName", "星空助手"
+            VALUE "ProductVersion", "1.3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_DialHelper_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 439
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_DIALOG_USERCONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_DIALOG_NEWUSER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "XP.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 DialHelper(&A)..."
+    IDS_RASCS_1             "正在打开端口..."
+    IDS_RASCS_2             "端口已打开。"
+    IDS_RASCS_3             "正在连接设备..."
+    IDS_RASCS_4             "设备已经连接上。"
+    IDS_RASCS_5             "所有设备已经连接上。"
+    IDS_RASCS_6             "正在验证用户名和密码..."
+    IDS_RASCS_7             "验证通知..."
+    IDS_RASCS_8             "再次验证用户名和密码..."
+    IDS_RASCS_9             "回收验证。"
+    IDS_RASCS_10            "改变密码请求。"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_RASCS_11            "开始连接状态..."
+    IDS_RASCS_12            "计算连接速度..."
+    IDS_RASCS_13            "Authentication Acknowledged"
+    IDS_RASCS_14            "Reauthenticatation Started"
+    IDS_RASCS_15            "Authenticated"
+    IDS_RASCS_16            "Preparation For Callback"
+    IDS_RASCS_17            "等待设备重置..."
+    IDS_RASCS_18            "等待回复..."
+    IDS_RASCS_19            "Interactive"
+    IDS_RASCS_20            "再次验证..."
+    IDS_RASCS_21            "Callback Set By Caller"
+    IDS_RASCS_22            "密码过期。"
+    IDS_RASCS_23            "已连接。"
+    IDS_RASCS_24            "已断开连接。"
+    IDS_RASCS_25            "未知错误。"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\DialHelper.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
