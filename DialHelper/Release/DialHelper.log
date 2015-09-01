@@ -1,0 +1,66 @@
+﻿生成启动时间为 2015/9/1 23:21:13。
+     1>项目“E:\软件\杂碎项目\Netkeeper\DialHelper\DialHelper.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _USING_V110_SDK71_ /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt CreatUserInfo.cpp ..\CommenCode\CTrayIcon.cpp ..\CommenCode\CXKUsername.cpp DialHelper.cpp DialHelperDlg.cpp ..\CommenCode\MD5.cpp ..\CommenCode\Shortcut.cpp stdafx.cpp UserControl.cpp
+         CreatUserInfo.cpp
+     1>D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: 参见“MBCS_Support_Deprecated_In_MFC”的声明
+         CTrayIcon.cpp
+     1>D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: 参见“MBCS_Support_Deprecated_In_MFC”的声明
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+     1>..\CommenCode\CTrayIcon.cpp(84): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\string.h(119): note: 参见“strcpy”的声明
+     1>..\CommenCode\CTrayIcon.cpp(193): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\string.h(119): note: 参见“strcpy”的声明
+         CXKUsername.cpp
+     1>D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: 参见“MBCS_Support_Deprecated_In_MFC”的声明
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+     1>..\CommenCode\CXKUsername.cpp(82): warning C4244: “=”: 从“long”转换到“unsigned char”，可能丢失数据
+     1>..\CommenCode\CXKUsername.cpp(83): warning C4244: “=”: 从“long”转换到“unsigned char”，可能丢失数据
+     1>..\CommenCode\CXKUsername.cpp(84): warning C4244: “=”: 从“unsigned long”转换到“unsigned char”，可能丢失数据
+     1>..\CommenCode\CXKUsername.cpp(123): warning C4244: “=”: 从“long”转换到“unsigned char”，可能丢失数据
+     1>..\CommenCode\CXKUsername.cpp(124): warning C4244: “=”: 从“long”转换到“unsigned char”，可能丢失数据
+     1>..\CommenCode\CXKUsername.cpp(125): warning C4244: “=”: 从“unsigned long”转换到“unsigned char”，可能丢失数据
+         DialHelper.cpp
+     1>D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: 参见“MBCS_Support_Deprecated_In_MFC”的声明
+         DialHelperDlg.cpp
+     1>D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: 参见“MBCS_Support_Deprecated_In_MFC”的声明
+         MD5.cpp
+     1>..\CommenCode\MD5.cpp(348): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+     1>..\CommenCode\MD5.cpp(350): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+         Shortcut.cpp
+     1>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\ShlObj.h(1151): warning C4091: “typedef ”: 没有声明变量时忽略“tagGPFIDL_FLAGS”的左侧
+         stdafx.cpp
+     1>D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: 参见“MBCS_Support_Deprecated_In_MFC”的声明
+         UserControl.cpp
+     1>D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afx.h(33): note: 参见“MBCS_Support_Deprecated_In_MFC”的声明
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\bin\rc.exe /D NDEBUG /D _USING_V110_SDK71_ /l"0x0804" /IRelease\ /nologo /fo"Release\DialHelper.res" DialHelper.rc 
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\软件\杂碎项目\Netkeeper\Release\NetKeeper.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:XP.manifest /manifestinput:"D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\Include\Manifest\dpiaware.manifest" /Debug /PDB:"E:\软件\杂碎项目\Netkeeper\Release\NetKeeper.pdb" /SUBSYSTEM:WINDOWS,"5.01" /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\软件\杂碎项目\Netkeeper\Release\NetKeeper.lib" /MACHINE:X86 /SAFESEH Release\DialHelper.res
+         Release\CreatUserInfo.obj
+         Release\CTrayIcon.obj
+         Release\CXKUsername.obj
+         Release\DialHelper.obj
+         Release\DialHelperDlg.obj
+         Release\MD5.obj
+         Release\Shortcut.obj
+         Release\stdafx.obj
+         Release\UserControl.obj
+         正在生成代码
+         All 419 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+         已完成代码的生成
+         DialHelper.vcxproj -> E:\软件\杂碎项目\Netkeeper\Release\NetKeeper.exe
+     1>已完成生成项目“E:\软件\杂碎项目\Netkeeper\DialHelper\DialHelper.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:09.89
