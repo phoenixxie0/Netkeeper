@@ -12,7 +12,17 @@ CXKUsername::CXKUsername(CString username, INT ver, long lasttimec)
 	m_ver = ver;
 	m_username = username;
 	m_lasttimec = lasttimec;
-	if (ver == 18)
+	if (ver == 32)
+	{
+		RADIUS = _T("jiangxi4.0");
+		LR = _T("\r1");
+	}
+	else if (ver == 29)
+	{
+		RADIUS = _T("nanchang3.0");
+		LR = _T("\r0");
+	}
+	else if (ver == 18)
 	{
 		RADIUS = _T("nanchang3.0");
 		LR = _T("\r0");

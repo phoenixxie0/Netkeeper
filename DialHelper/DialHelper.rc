@@ -73,12 +73,11 @@ IDD_ABOUTBOX DIALOGEX 0, 0, 238, 142
 STYLE DS_SYSMODAL | DS_SETFONT | WS_POPUP | WS_BORDER | WS_SYSMENU
 FONT 9, "宋体", 0, 0, 0x1
 BEGIN
-    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
-    LTEXT           "星空助手V1.3 版",IDC_STATIC,46,21,119,8,SS_NOPREFIX
-    LTEXT           "Copyright (C) 2008 NOVASEED Studio",IDC_STATIC,50,115,139,8
-    LTEXT           "作者:Phoenix.xie",IDC_STATIC,47,45,65,8
-    LTEXT           "E-mail:xseven007@sina.com",IDC_STATIC,56,63,101,8
-    LTEXT           "个人主页:http://www.novaseed.net",IDC_STATIC,55,85,129,8
+    ICON            IDR_MAINFRAME,IDC_STATIC,37,17,20,20
+    LTEXT           "星空助手V1.3 喵喵喵",IDC_STATIC,81,22,119,8,SS_NOPREFIX
+    LTEXT           "使用MIT协议授权",IDC_STATIC,89,111,58,8
+    LTEXT           "原作者:Phoenix.xie",IDC_STATIC,85,47,65,8
+    LTEXT           "MOD: SgDylan",IDC_STATIC,95,76,65,8
 END
 
 IDD_DialHelper_DIALOG DIALOGEX 0, 0, 446, 229
@@ -113,7 +112,7 @@ BEGIN
     LTEXT           "秒",IDC_STATIC,374,53,9,8
     GROUPBOX        "连接及账号设置",IDC_STATIC,251,132,186,88
     LTEXT           "连接名称:",IDC_STATIC,257,151,37,8
-    CONTROL         132,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,12,12,213,91
+    CONTROL         IDB_BITMAP1,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,27,12,182,73
     LTEXT           "",IDC_STATIC,178,185,8,11,0,WS_EX_STATICEDGE
     LTEXT           "",IDC_TEXT,185,185,45,11,0,WS_EX_STATICEDGE
     PUSHBUTTON      "关于(&A)",IDC_BUTTON_ABOUT,359,197,58,16
@@ -159,8 +158,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,2,1,0
- PRODUCTVERSION 1,2,1,0
+ FILEVERSION 1,2,1,2
+ PRODUCTVERSION 1,2,1,2
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -177,12 +176,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "NOVASEED Studio"
             VALUE "FileDescription", "星空助手,星空极速拨号替代软件。"
-            VALUE "FileVersion", "1.3"
+            VALUE "FileVersion", "1.2.1.2"
             VALUE "InternalName", "NetKeeper.exe"
             VALUE "LegalCopyright", "软件开源,欢迎大家一起讨论和研究"
             VALUE "OriginalFilename", "NetKeeper.exe"
             VALUE "ProductName", "星空助手"
-            VALUE "ProductVersion", "1.3"
+            VALUE "ProductVersion", "1.2.1.2"
         END
     END
     BLOCK "VarFileInfo"
@@ -202,7 +201,7 @@ GUIDELINES DESIGNINFO
 BEGIN
     IDD_ABOUTBOX, DIALOG
     BEGIN
-        LEFTMARGIN, 7
+        LEFTMARGIN, 5
         RIGHTMARGIN, 231
         TOPMARGIN, 7
         BOTTOMMARGIN, 135
@@ -247,6 +246,22 @@ IDB_BITMAP1             BITMAP                  "res\\bitmap1.bmp"
 //
 
 1                       RT_MANIFEST             "XP.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DialHelper_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //

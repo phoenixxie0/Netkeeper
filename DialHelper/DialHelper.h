@@ -10,7 +10,7 @@
 #include "resource.h"		// Ö÷·ûºÅ
 #include "DialHelperDlg.h"
 
-#define  CAPTION_NAME _T("ĞÇ¿ÕÖúÊÖ V1.3 ")
+#define  CAPTION_NAME _T("ĞÇ¿ÕÖúÊÖ V1.3 ß÷ß÷ß÷")
 
 
 

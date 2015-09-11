@@ -8,11 +8,11 @@
 class CXKUsername
 {
 public:
-	CXKUsername(CString username, INT ver = 18, long lasttimec = 0);
+	CXKUsername(CString username, INT ver = 32, long lasttimec = 0);
 	CString Realusername();
 	long GetLastTimeC();
 private:
-	INT m_ver;				//星空的版本，V12和V18两种
+	INT m_ver;				//星空的版本，V12、V18、V29、V32
 	long m_lasttimec;		//上次成功的时间处理
 	CString m_username;		//原始用户名
 	CString m_realusername;	//真正的用户名
